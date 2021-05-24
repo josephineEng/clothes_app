@@ -1,1 +1,1 @@
-web: run this thing 
+web: waitress python_project.wsgi.application--log-file
