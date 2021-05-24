@@ -1,1 +1,1 @@
-web: waitress python_project.wsgi.application --log-file -
+web:gunicorn  python_project.wsgi --log-file -
