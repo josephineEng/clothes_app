@@ -1,0 +1,61 @@
+{% extends 'base.html'%}
+
+{% load static%}
+{%block content%}
+<div>
+ <h1>FEMALE CONTENT</h1>
+
+ 
+{{my_text}}<b>
+{{dress_size}}
+
+
+<form method="POST">
+{% csrf_token %}
+{{form}}
+<button type="submit"> NEXT</button>
+</form>
+<div>
+{{sz}}
+
+
+
+<div class="container px-4" style="margin-top: 20px;">
+    <h6 style="margin-bottom: 20px;">COLLECTION</h6>
+
+    <div class="row gx-5">
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/dressb.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">DRESS</h5>
+            </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/skirrtt.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">SKIRT</h5>
+            </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/female pants.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">PANTS</h5>
+            </div>
+        </div>
+      </div>
+      
+    </div>
+</div>
+
+
+
+
+{%endblock%}
