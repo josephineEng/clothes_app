@@ -22,29 +22,25 @@ WAIST_M=(('1','79'),('2','87'),('3','94'),('4','105'))
 HIPS_M=(('1','92'),('2','92'),('3','107'),('4','115'))
 
 class select_cloth(forms.Form):
-    DRESS = forms.ChoiceField(choices=collection)
-    CHEST=forms.ChoiceField(choices=CHEST)
-    WAIST=forms.ChoiceField(choices=WAIST)
-    HIPS=forms.ChoiceField(choices=HIPS)
-
+  DRESS = forms.ChoiceField(choices=collection)
+  CHEST=forms.ChoiceField(choices=CHEST)
+  WAIST=forms.ChoiceField(choices=WAIST)
+  HIPS=forms.ChoiceField(choices=HIPS)
 
 class male_selection(forms.Form):
-    SHIRT_SHORT= forms.ChoiceField(choices=collections)
-    CHEST_M=forms.ChoiceField(choices=CHEST_M)
-    WAIST_M=forms.ChoiceField(choices=WAIST_M)
-    HIPS_M=forms.ChoiceField(choices=HIPS_M)
-
+  SHIRT_SHORT= forms.ChoiceField(choices=collections)
+  CHEST_M=forms.ChoiceField(choices=CHEST_M)
+  WAIST_M=forms.ChoiceField(choices=WAIST_M)
+  HIPS_M=forms.ChoiceField(choices=HIPS_M)
 
 class select_clotha(forms.Form):
-    DRESS = forms.ChoiceField(choices=collectionn)
-    CHEST=forms.ChoiceField(choices=CHEST)
-    WAIST=forms.ChoiceField(choices=WAIST)
-    HIPS=forms.ChoiceField(choices=HIPS)
-
-
-
+  DRESS = forms.ChoiceField(choices=collectionn)
+  CHEST=forms.ChoiceField(choices=CHEST)
+  WAIST=forms.ChoiceField(choices=WAIST)
+  HIPS=forms.ChoiceField(choices=HIPS)
+  
 class male_selectionn(forms.Form):
-    SHIRT_SHORT= forms.ChoiceField(choices=collectionss)
-    CHEST_M=forms.ChoiceField(choices=CHEST_M)
-    WAIST_M=forms.ChoiceField(choices=WAIST_M)
-    HIPS_M=forms.ChoiceField(choices=HIPS_M)    
+  SHIRT_SHORT= forms.ChoiceField(choices=collectionss)
+  CHEST_M=forms.ChoiceField(choices=CHEST_M)
+  WAIST_M=forms.ChoiceField(choices=WAIST_M)
+  HIPS_M=forms.ChoiceField(choices=HIPS_M)
